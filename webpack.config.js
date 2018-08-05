@@ -5,10 +5,6 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
-const PATHS = {
-  src: path.join(__dirname, 'src'),
-}
-
 const minify = {
   removeComments: true,
   collapseWhitespace: true,
@@ -22,8 +18,10 @@ const minify = {
   minifyURLs: true,
 }
 
+require("babel-polyfill");
+
 module.exports = {
-  entry: "./src/js/main.js",
+  entry: ["babel-polyfill", "./src/js/main.js"],
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
@@ -40,7 +38,7 @@ module.exports = {
             js: {
               loader: 'babel-loader',
               options: {
-                  presets: ['vue-app']
+                presets: ['vue-app']
               }
            },
           }
@@ -49,7 +47,6 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        // include: [resolve('js'), resolve('node_modules/webpack-dev-server/client')]
       },
       {
         test: /\.(png|jpg|gif|svg|ttf)$/,
@@ -96,10 +93,10 @@ module.exports = {
       filename: './index.html'
     }),
     new CopyWebpackPlugin([
-      // {
-        // from: 'src/images',
-        // to: 'images'
-      // },
+      {
+        from: 'src/js/questions.json',
+        to: 'questions.json'
+      },
     ]),
     new MiniCssExtractPlugin({
       filename: "bundle.css",

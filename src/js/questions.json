@@ -1,3 +1,24 @@
 {
-  "a": "b"  
+  "questions": [
+    {
+      "question": "tak?",
+      "options": [
+          "tak",
+          "nie",
+          "nieee",
+          "nieeeeee"
+      ],
+      "answer": "tak"
+    },
+    {
+      "question": "nie?",
+      "options": [
+          "nie",
+          "tak",
+          "tak",
+          "tak"
+      ],
+      "answer": "nie"
+    }
+  ]
 }
