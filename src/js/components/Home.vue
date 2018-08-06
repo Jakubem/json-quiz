@@ -1,31 +1,21 @@
 <template>
-  <div>
-    <options :options="question[0].options">
-    </options>
-  </div>
+  <question-card>
+  </question-card>
 </template>
 
 <script>
-  import Options from './Options.vue';
+  import QuestionCard from './QuestionCard.vue';
   export default {
     components: {
-      Options,
-    },
-    created: async function() {
-    const data = await fetch("./questions.json");
-    const allQuestions = await data.json();
-
-    const currentQuestion = allQuestions.questions
-    this.question = currentQuestion;
+      QuestionCard,
     },
     methods: {
     },
     data () {
-        return {
-          question: [],
-        }
-      },
-}
+      return {
+      }
+    },
+  }
 </script>
 <style>
 
