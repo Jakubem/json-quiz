@@ -1,28 +1,28 @@
 <template>
   <div>
-    <p v-for="question in questions">
-      {{ question }}
-    </p>
+    <options :options="question[0].options">
+    </options>
   </div>
 </template>
 
 <script>
-//   import SingleCard from './SingleCard.vue';
+  import Options from './Options.vue';
   export default {
     components: {
-        // 'single-card': SingleCard,
+      Options,
     },
-    mounted: async function() {
-    // change to questions
+    created: async function() {
     const data = await fetch("./questions.json");
     const allQuestions = await data.json();
-    this.questions = allQuestions.questions
+
+    const currentQuestion = allQuestions.questions
+    this.question = currentQuestion;
     },
     methods: {
     },
     data () {
         return {
-          questions: [],
+          question: [],
         }
       },
 }
