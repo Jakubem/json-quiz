@@ -18,16 +18,15 @@
       Options,
     },
     mounted: function() {
-
     const currentQuestion = questions.questions[1]
     this.question = currentQuestion;
     },
     methods: {
     },
     data () {
-        return {
-          question: [],
-        }
+      return {
+        question: [],
+      }
     },
     props: ['options']
 }
@@ -50,6 +49,6 @@
     font: $f-question;
   }
 
-  .question-wrapper {
-  }
+  // .question-wrapper {
+  // }
 </style>

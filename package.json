@@ -28,7 +28,6 @@
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
-    "vue": "^2.5.16",
     "vue-loader": "^15.2.6",
     "vue-template-compiler": "^2.5.16",
     "webpack": "^4.1.0",
@@ -37,6 +36,7 @@
   },
   "dependencies": {
     "babel-preset-vue-app": "^2.0.0",
+    "vue": "^2.5.16",
     "vue-spinner": "^1.0.3"
   }
 }
