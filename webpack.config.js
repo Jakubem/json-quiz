@@ -93,6 +93,12 @@ module.exports = {
       template: './src/views/index.html',
       filename: './index.html'
     }),
+    new HtmlWebpackPlugin({
+      hash: false,
+      minify: minify,
+      template: './src/views/404.html',
+      filename: './404.html'
+    }),
     new CopyWebpackPlugin([
       {
         from: 'src/js/questions.json',

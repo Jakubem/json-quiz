@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import '../css/style.scss';
 
-import Start from './components/pages/Start.vue';
-import Quiz from './components/pages/Quiz.vue';
-import NotFound from './components/pages/404.vue';
+import Start from './pages/Start.vue';
+import Quiz from './pages/Quiz.vue';
+import NotFound from './pages/404.vue';
 
 // import routes from './routes.js';
 

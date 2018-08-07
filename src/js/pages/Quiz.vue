@@ -1,14 +1,13 @@
 <template>
-  <p>
-    start quiz:
-  </p>
+  <question-card>
+  </question-card>
 </template>
 
 <script>
-  // import QuestionCard from '../QuestionCard.vue';
+  import QuestionCard from '../components/QuestionCard.vue';
   export default {
     components: {
-      // QuestionCard,
+      QuestionCard,
     },
     methods: {
     },
