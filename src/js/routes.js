@@ -1,4 +1,4 @@
 export default {
   '/': Start,
-  '/quiz': 'Quiz'
+  '/quiz': Quiz
 }

@@ -5,15 +5,17 @@ import Start from './components/pages/Start.vue';
 import Quiz from './components/pages/Quiz.vue';
 import NotFound from './components/pages/404.vue';
 
-import routes from './routes.js';
+// import routes from './routes.js';
 
-const app = new Vue({
-  el: "#app",
+const routes = {
+  '/': Start,
+  '/quiz': Quiz
+}
+
+new Vue({
+  el: '#app',
   data: {
     currentRoute: window.location.pathname
-  },
-  mounted: function() {
-    console.log(this.currentRoute);
   },
   computed: {
     ViewComponent () {
@@ -23,3 +25,6 @@ const app = new Vue({
   render (h) { return h(this.ViewComponent) }
 })
 
+window.addEventListener('popstate', () => {
+  app.currentRoute = window.location.pathname
+})
