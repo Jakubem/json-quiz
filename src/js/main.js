@@ -5,8 +5,7 @@ import Start from './pages/Start.vue';
 import Quiz from './pages/Quiz.vue';
 import NotFound from './pages/404.vue';
 
-// import routes from './routes.js';
-
+// todo: add node server fallback for 404s
 const routes = {
   '/': Start,
   '/quiz': Quiz

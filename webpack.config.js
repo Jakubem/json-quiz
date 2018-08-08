@@ -100,10 +100,10 @@ module.exports = {
       filename: './404.html'
     }),
     new CopyWebpackPlugin([
-      {
-        from: 'src/js/questions.json',
-        to: 'questions.json'
-      },
+      // {
+      //   from: 'src/js/questions.json',
+      //   to: 'questions.json'
+      // },
     ]),
     new MiniCssExtractPlugin({
       filename: "bundle.css",
