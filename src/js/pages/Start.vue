@@ -2,8 +2,9 @@
   <div class="start-wrapper">
     <a href="/quiz" class="start-a">Start Quiz</a>
     <vue-qr 
-      class="qr-vue" 
+      class="qr-vue"
       :text="PageUrl"
+      :colorDark="Dark"
       :size="400">
     </vue-qr>
   </div>
@@ -18,6 +19,7 @@
     data () {
       return {
         PageUrl: `${window.location.href}quiz`,
+        Dark: '#6013cc'
       }
     },
   }
@@ -33,17 +35,22 @@
     box-shadow: 0px 4px 15px -6px rgba(0, 0, 0, 0.5);
   }
   .start-a {
-    margin-bottom: 30px;
-    padding: 10px 25px;
+    margin-bottom: 40px;
+    padding: 15px 35px;
     border-radius: 50px;
-    // width: 100%;
     font: $f-a;
     text-decoration: none;
-    color: $c-black;
-    background-color: $c-purple-light;
+    color: $c-white;
+    background-color: $c-black;
     text-align: center;
+    
+    &:hover {
+      background-color: $c-purple;
+    }
   }
   .qr-vue {
-    box-shadow: 0px 4px 15px -6px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 25px -5px rgba(0, 0, 0, 0.6);
+    width: 400px;
+    height: 400px;
   }
 </style>
