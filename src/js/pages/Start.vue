@@ -1,8 +1,11 @@
 <template>
-  <p>
-    <vue-qr :bgSrc='src' :logoSrc="src2" text="Hello world!" :size="200"></vue-qr>
-    <vue-qr text="Hello world!" :callback="test" qid="testid"></vue-qr>
-  </p>
+  <div class="start-wrapper">
+    <vue-qr 
+      class="qr-vue" 
+      :text="PageUrl"
+      :size="400">
+    </vue-qr>
+  </div>
 </template>
 
 <script>
@@ -11,17 +14,18 @@
     components: {
       VueQr,
     },
-    methods: {
-      test(dataUrl,id){
-          console.log(url, id)
-      }
-    },
     data () {
       return {
+        PageUrl: `${window.location.href}quiz`,
       }
     },
   }
 </script>
 <style>
-
+  .start-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 </style>
