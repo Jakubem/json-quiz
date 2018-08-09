@@ -1,6 +1,6 @@
 <template>
   <p>
-    404
+    niema takiego numeru
   </p>
 </template>
 
