@@ -1,14 +1,14 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
+import questions from './questions.json'
+
 Vue.use(Vuex)
 
-// root state object.
-// each Vuex instance is just a single state tree.
 const state = {
-  correct: 15,
-  wrong: 15,
-  all: 15
+  correct: 0,
+  wrong: 0,
+  all: questions.questions.length
 }
 
 const mutations = {
