@@ -1,16 +1,18 @@
 <template>
   <div class="main-wrapper">
+    <button @click="correctAnwser">click</button>
     <h1 class="headline">
       Your score:
     </h1>
     <div class="score">
-      {{`${$store.state.correct}/${$store.state.all}`}}
+      {{`${score}/${all}`}}
     </div>
     <a href="/quiz" class="start-a">Play again</a>
   </div>
 </template>
 
 <script>
+  import { mapMutations } from 'vuex';
   export default {
     components: {
     },
@@ -18,6 +20,19 @@
       return {
       }
     },
+    computed: {
+      score() {
+        return this.$store.state.correct;
+      },
+      all() {
+        return this.$store.state.all;
+      }
+    },
+    methods: mapMutations([
+      'correctAnwser',
+    ])
+
+    
   }
 </script>
 <style lang="scss">

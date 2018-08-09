@@ -29,6 +29,7 @@
   color: $c-white;
   background-color: $c-black;
   text-align: center;
+  transition: background-color .07s;
   
   &:hover {
     background-color: $c-purple;

@@ -1,14 +1,14 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import questions from './questions.json'
+import allQuestions from './questions.json'
 
 Vue.use(Vuex)
 
 const state = {
   correct: 0,
   wrong: 0,
-  all: questions.questions.length
+  all: allQuestions.questions.length
 }
 
 const mutations = {

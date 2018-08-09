@@ -19,6 +19,46 @@
           "tak"
       ],
       "answer": "nie"
+    },
+    {
+      "question": "nie?",
+      "options": [
+          "nie",
+          "tak",
+          "tak",
+          "tak"
+      ],
+      "answer": "nie"
+    },
+    {
+      "question": "nie?",
+      "options": [
+          "nie",
+          "tak",
+          "tak",
+          "tak"
+      ],
+      "answer": "nie"
+    },
+    {
+      "question": "nie?",
+      "options": [
+          "nie",
+          "tak",
+          "tak",
+          "tak"
+      ],
+      "answer": "nie"
+    },
+    {
+      "question": "nie?",
+      "options": [
+          "nie",
+          "tak",
+          "tak",
+          "tak"
+      ],
+      "answer": "nie"
     }
   ]
 }
