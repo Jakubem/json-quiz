@@ -1,12 +1,10 @@
 <template>
-  <div class="main-view">
-    <div class="question-wrapper">
-      <p class="question">
-        {{ question.question }}
-      </p>
-      <options :options="question.options">
-      </options>
-    </div>
+  <div class="question-wrapper">
+    <p class="question">
+      {{ question.question }}
+    </p>
+    <options :options="question.options">
+    </options>
   </div>
 </template>
 
@@ -34,21 +32,5 @@
 
 <style lang="scss" scoped>
   @import '../../css/_var.scss';
-  .main-view {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  .question {
-    text-align: center;
-    background-color: $c-white;
-    margin: 10px;
-    padding: 10px;
-    height: 100px;
-    font: $f-question;
-  }
 
-  // .question-wrapper {
-  // }
 </style>

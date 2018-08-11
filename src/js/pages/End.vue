@@ -1,6 +1,5 @@
 <template>
   <div class="main-wrapper">
-    <button @click="correctAnwser">click</button>
     <h1 class="headline">
       Your score:
     </h1>
@@ -24,12 +23,16 @@
       score() {
         return this.$store.state.correct;
       },
+      question() {
+        return this.$store.state.questions;
+      },
       all() {
         return this.$store.state.all;
-      }
+      },
     },
     methods: mapMutations([
       'correctAnwser',
+      'getQuestion',
     ])
 
     
