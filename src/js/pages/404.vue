@@ -1,7 +1,9 @@
 <template>
-  <p>
-    niema takiego numeru
-  </p>
+  <div class="main-wrapper">
+    <h1 class="headline">
+      niema takiego numeru
+    </h1>
+  </div>
 </template>
 
 <script>
