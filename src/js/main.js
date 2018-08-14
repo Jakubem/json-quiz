@@ -16,9 +16,9 @@ const router = new VueRouter({
   mode: 'hash',
   base: __dirname,
   routes: [
-    { path: '', component: Start },
-    { path: 'quiz', component: Quiz },
-    { path: 'score', component: End },
+    { path: '/', component: Start },
+    { path: '/quiz', component: Quiz },
+    { path: '/score', component: End },
     { path: "*", component: NotFound }
   ]
 })
