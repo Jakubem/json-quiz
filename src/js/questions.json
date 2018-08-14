@@ -1,7 +1,7 @@
 {
   "questions": [
     {
-      "question": "możnu?",
+      "question": "0możnu?",
       "options": [
           "tak",
           "nie",
@@ -11,7 +11,7 @@
       "answer": "tak"
     },
     {
-      "question": "nie?",
+      "question": "1nie?",
       "options": [
           "nie",
           "tak",
@@ -21,7 +21,7 @@
       "answer": "nie"
     },
     {
-      "question": "nie?",
+      "question": "2nie?",
       "options": [
           "nie",
           "tak",
@@ -31,7 +31,7 @@
       "answer": "nie"
     },
     {
-      "question": "nie?",
+      "question": "3nie?",
       "options": [
           "nie",
           "tak",
@@ -41,7 +41,7 @@
       "answer": "nie"
     },
     {
-      "question": "nie?",
+      "question": "4nie?",
       "options": [
           "nie",
           "tak",
@@ -51,7 +51,7 @@
       "answer": "nie"
     },
     {
-      "question": "nie?",
+      "question": "5nie?",
       "options": [
           "nie",
           "tak",

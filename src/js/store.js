@@ -2,9 +2,9 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import VuexPersistence from 'vuex-persist'
 
-const vuexLocal = new VuexPersistence({
-  storage: window.localStorage
-})
+// const vuexLocal = new VuexPersistence({
+//   storage: window.localStorage
+// })
 
 import allQuestions from './questions.json'
 
@@ -21,14 +21,14 @@ const mutations = {
   correctAnwser (state, n) {
     state.correct += n
   },
-  questionNo (state) {
-    state.questionNo++
+  nextNo (state) {
+    state.questionsNo++
   }
 }
 
 // getters are functions
 const getters = {
-  evenOrOdd: state => state.count % 2 === 0 ? 'even' : 'odd',
+  // evenOrOdd: state => state.count % 2 === 0 ? 'even' : 'odd',
 }
 
 export default new Vuex.Store({

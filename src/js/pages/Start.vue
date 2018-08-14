@@ -1,6 +1,6 @@
 <template>
   <div class="main-wrapper">
-    <a href="/quiz" class="start-a">Start Quiz </a>
+    <router-link to="/quiz" class="start-a">Start Quiz</router-link>
     <vue-qr 
       class="qr-vue"
       :text="PageUrl"
