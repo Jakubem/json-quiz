@@ -1,5 +1,6 @@
 <template>
   <div class="question-wrapper">
+    <status />
     <p class="question">
       {{ current.question }}
     </p>
@@ -20,9 +21,11 @@
   // import questions from '../questions.json';
   import { mapMutations, mapGetters } from 'vuex';
   import QuestionButton from './QuestionButton.vue';
+  import Status from './Status.vue';
   export default {
     components: {
       QuestionButton,
+      Status
     },
     data () {
       return {

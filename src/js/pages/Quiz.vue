@@ -1,7 +1,6 @@
 <template>
   <div class="main-view">
-    <question-card>
-    </question-card>
+    <question-card />
   </div>
 </template>
 
