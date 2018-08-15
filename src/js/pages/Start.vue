@@ -18,7 +18,7 @@
     },
     data () {
       return {
-        PageUrl: `${window.location.href}#quiz`,
+        PageUrl: `${window.location.href}quiz`,
         Dark: '#6013cc'
       }
     },

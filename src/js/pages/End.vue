@@ -6,7 +6,7 @@
     <div class="score">
       {{`${score}/${all}`}}
     </div>
-    <a href="/quiz" class="start-a">Play again</a>
+    <router-link to="/" class="start-a">Play again</router-link>
   </div>
 </template>
 

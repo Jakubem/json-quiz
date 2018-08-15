@@ -58,7 +58,7 @@
             this.nextNo()
             // pls fix
             if (this.currentNo >= this.all) {
-              window.location.hash = '/score'
+              this.$router.push('/score');
             }
         },
       }
