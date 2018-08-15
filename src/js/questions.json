@@ -13,52 +13,52 @@
     {
       "question": "1nie?",
       "options": [
-          "nie",
-          "tak",
-          "tak",
-          "tak"
+          "oko",
+          "głowa",
+          "żebro",
+          "noga"
       ],
-      "answer": "nie"
+      "answer": "oko"
     },
     {
       "question": "2nie?",
       "options": [
-          "nie",
-          "tak",
-          "tak",
-          "tak"
+          "łódź",
+          "cukinia",
+          "krab",
+          "karp"
       ],
-      "answer": "nie"
+      "answer": "karp"
     },
     {
-      "question": "3nie?",
+      "question": "3?",
       "options": [
           "nie",
-          "tak",
-          "tak",
-          "tak"
+          "niewiem",
+          "mleko",
+          "koza"
       ],
-      "answer": "nie"
+      "answer": "koza"
     },
     {
-      "question": "4nie?",
+      "question": "4?",
       "options": [
-          "nie",
-          "tak",
-          "tak",
-          "tak"
+          "młotek",
+          "czołg",
+          "jabłko",
+          "mysz"
       ],
-      "answer": "nie"
+      "answer": "mysz"
     },
     {
       "question": "5nie?",
       "options": [
-          "nie",
-          "tak",
-          "tak",
-          "tak"
+          "druk",
+          "kruk",
+          "dziób",
+          "kuc"
       ],
-      "answer": "nie"
+      "answer": "kuc"
     }
   ]
 }

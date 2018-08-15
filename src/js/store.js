@@ -26,9 +26,11 @@ const mutations = {
   }
 }
 
-// getters are functions
 const getters = {
-  // evenOrOdd: state => state.count % 2 === 0 ? 'even' : 'odd',
+  // not needed lol
+  // getCorrectAnwser: state => {
+  //   return state.questions[state.questionsNo].answer
+  // }
 }
 
 export default new Vuex.Store({

@@ -18,7 +18,7 @@
 
 <script>
   // import questions from '../questions.json';
-  import { mapMutations } from 'vuex';
+  import { mapMutations, mapGetters } from 'vuex';
   import QuestionButton from './QuestionButton.vue';
   export default {
     components: {
@@ -27,7 +27,7 @@
     data () {
       return {
         question: this.$store.state.questions,
-        no: this.$store.state.questionsNo
+        all: this.$store.state.all
       }
     },
     computed: {
@@ -48,9 +48,15 @@
         'nextNo',
       ]),
       {
-        handleOptionPicked: function (v) {
-          console.log(v);
-          this.nextNo();
+        handleOptionPicked: function (picked) {
+            (picked === this.current.answer) 
+              ? this.correctAnwser(1) 
+              : this.correctAnwser(0);
+            this.nextNo()
+            // pls fix
+            if (this.currentNo >= this.all) {
+              window.location.hash = '/score'
+            }
         },
       }
     ),
