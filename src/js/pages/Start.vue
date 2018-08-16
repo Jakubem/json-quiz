@@ -16,6 +16,8 @@
     components: {
       VueQr,
     },
+    mounted: function() {
+    },
     data () {
       return {
         PageUrl: `${window.location.href}quiz`,
@@ -30,5 +32,15 @@
     box-shadow: 0px 4px 25px -5px rgba(0, 0, 0, 0.6);
     width: 400px;
     height: 400px;
+  }
+  @media screen and (max-width: 600px) {
+    .qr-vue img {
+      width: 250px;
+      height: 250px;
+    }
+    .qr-vue {
+      width: 250px;
+      height: 250px;
+    }
   }
 </style>

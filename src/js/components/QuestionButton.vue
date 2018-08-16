@@ -42,13 +42,22 @@
     height: 150px;
     font: $f-question;
   }
-  .next {
-    float: right;
-    background-color: $c-green;
-    height: 50px;
-    border-radius: 50px;
-  }
+
   .option:hover {
     box-shadow: 0px 4px 15px -6px rgba(0, 0, 0, 0.5);
+  }
+  @media screen and (max-width: 600px) {
+    .option {
+      height: 70px;
+      width: 150px;
+      margin: 10px;
+      font: $f-option-mob;
+    }
+    .question {
+      margin: 7px;
+      padding: 7px;
+      height: 100px;
+      font: $f-question-mob;
+    }
   }
 </style>

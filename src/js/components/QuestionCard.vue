@@ -67,42 +67,5 @@
 </script>
 
 <style lang="scss">
-  @import '../../css/_var.scss';
-  .option {
-    height: 90px;
-    width: 250px;
-    border: none;
-    border-radius: 3px;
-    background-color: $c-purple-light;
-    margin: 10px;
-    padding: 0;
-    font: $f-option;
-    color: $c-black;
-    box-shadow: 0px 3px 10px -6px rgba(0,0,0,0.4);
-    transition: box-shadow .2s;
-    overflow-wrap: break-word;
-    box-sizing: border-box;
-    &[aria-checked="true"] {
-      background-color: $c-purple;
-      color: $c-white;
-    }
-  }
-    .question {
-    text-align: center;
-    background-color: $c-white;
-    margin: 10px;
-    padding: 10px;
-    height: 150px;
-    font: $f-question;
-  }
-  .next {
-    float: right;
-    background-color: $c-green;
-    height: 50px;
-    border-radius: 50px;
-  }
 
-  .option:hover {
-    box-shadow: 0px 4px 15px -6px rgba(0, 0, 0, 0.5);
-  }
 </style>

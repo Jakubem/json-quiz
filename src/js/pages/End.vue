@@ -6,7 +6,7 @@
     <div class="score">
       {{`${score}/${all}`}}
     </div>
-    <router-link to="/" class="start-a">Play again</router-link>
+    <button @click="reset" class="start-a">Play again</button>
   </div>
 </template>
 
@@ -30,12 +30,13 @@
         return this.$store.state.all;
       },
     },
-    methods: mapMutations([
-      'correctAnwser',
-      'getQuestion',
-    ])
-
-    
+    methods: {
+      reset() {
+        this.$store.state.correct = 0;
+        this.$store.state.questionsNo = 0;
+        this.$router.push('/');
+      }
+    }
   }
 </script>
 <style lang="scss">

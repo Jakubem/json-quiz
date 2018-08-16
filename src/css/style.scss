@@ -50,3 +50,16 @@
   font: $f-h1;
   text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+  .headline {
+    font: $f-h1-mob;
+  }
+  .score {
+    font: $f-h1-mob;
+    margin-bottom: 20px;
+  }
+  .start-a {
+    font: $f-a-mob;
+  }
+}
